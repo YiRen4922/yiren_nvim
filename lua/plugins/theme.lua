@@ -9,18 +9,18 @@ local theme = {
             vim.cmd[[colorscheme tokyonight-storm]]
             -- Lua
             require('barbecue').setup {
-              -- ... your barbecue config
-              theme = 'tokyonight',
-              -- ... your barbecue config
+                -- ... your barbecue config
+                theme = 'tokyonight',
+                -- ... your barbecue config
             }
             -- Lua
             -- Lua
             require('lualine').setup {
-              options = {
-                -- ... your lualine config
-                theme = 'tokyonight'
-                -- ... your lualine config
-              }
+                options = {
+                    -- ... your lualine config
+                    theme = 'tokyonight'
+                    -- ... your lualine config
+                }
             }
         end,
         opts = {
