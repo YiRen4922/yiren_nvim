@@ -2,21 +2,17 @@ local ui = {
   {
     -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
-     name = "lualine",
     -- See `:help lualine.txt`
     opts = {
       options = {
         icons_enabled = true,
-        theme = 'tokyonight',
         component_separators = '|',
         section_separators = '',
       },
-      theme = "tokyonight",
     },
   },
   {
      "utilyre/barbecue.nvim",
-     name = "barbecue",
      version = "*",
      dependencies = {
        "SmiteshP/nvim-navic",
@@ -24,7 +20,6 @@ local ui = {
      },
      opts = {
        -- configurations go here
-       theme = "tokyonight"
      },
    
   },
