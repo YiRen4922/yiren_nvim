@@ -1,4 +1,5 @@
 local lsp = {
+    {
     "neovim/nvim-lspconfig",
     dependencies = {
         "williamboman/mason.nvim",
@@ -71,7 +72,7 @@ local lsp = {
         capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 
         -- local mason-lspconfig = require
-        require("neodev").setup()
+        require("neodev").setup({library = { plugins = { "nvim-dap-ui" }, types = true },})
         require("mason").setup()
         require("mason-lspconfig").setup
         {
@@ -91,5 +92,16 @@ local lsp = {
             end,
         }
     end,
+    },
+    {
+        "Civitasv/cmake-tools.nvim",
+    },
+    {
+        "p00f/clangd_extensions.nvim",
+        config = function ()
+            require("clangd_extensions").setup()
+        end
+    },
+
 }
 return lsp
